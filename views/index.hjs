@@ -7,18 +7,17 @@
 
 	<!-- Latest compiled and minified JavaScript -->
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </head>
 <body>
 <div class="container">
 	<h1>{{ title }}</h1>
-	<div class="jumbotron" id="msg">
-		<p>Hello! My name is Lucy</p>
+	<div class="jumbotron">
+		<p id="msg">Hello! If you have a referral code, please add it to the end of the URL above preceded by a '/'.</p>
 	</div>
-  		<button type="button" class="btn btn-default btn-lg">Left</button>
-  		<button type="button" class="btn btn-default btn-lg">Middle</button>
-  		<button type="button" class="btn btn-default btn-lg">Right</button>
+	<div class="answers">
+  	</div>
 </body>
-<script>
-
-</script>
+<script> var ref = "{{ ref }}";</script>
+<script src="javascripts/messaging.js"></script>
 </html>
