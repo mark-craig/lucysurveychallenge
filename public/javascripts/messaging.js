@@ -1,6 +1,6 @@
 // assuming it's OK for the token to be public
 var token = '6f7906ec9b8bb7a1d467169f920dcdc6';
-var base_url = "http://lucysurvey.com/api/converse/";
+var base_url = "https://lucysurvey.com/api/converse/";
 
 function getLucyResponse(payload) {
 	/* Get the response from the Lucy API for the given payload, and if successful 
@@ -8,9 +8,9 @@ function getLucyResponse(payload) {
 
 	// ref is passed from node to the view, check to make sure it is defined
 	if (ref == null) {
+		console.log("no ref provided");
 		return;
 	}
-	
 	$.ajax({
 		url: base_url + ref, 
 		type: 'POST',
